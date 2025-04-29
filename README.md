@@ -32,19 +32,19 @@ The key business goal is to guide studios and investors in making informed decis
 ## Visualizations
 
 1. **Studios vs Box Office Performance**  
-   ![Studios vs Box Office](Dsc-Phase-2-project-2025/Images/img1.png)
+   ![Studios vs Box Office](Images/img1.png)
 
 2. **Rotten Tomatoes Score vs Gross Revenue**  
-   ![RT Score vs Revenue](Dsc-Phase-2-project-2025/Images/img2.png)
+   ![RT Score vs Revenue](Images/img2.png)
 
 3. **Genre Distribution of Top-Grossing Films**  
-   ![Genre Distribution](Dsc-Phase-2-project-2025/Images/img3.png)
+   ![Genre Distribution](Images/img3.png)
 
 4. **Top Directors by Average Movie Rating**
-   ![Top Directors by Average Movie Rating](Dsc-Phase-2-project-2025/Images/img4.png)
+   ![Top Directors by Average Movie Rating](Images/img4.png)
 
 5. **Box Office Revenue by Genre**
-  ![Box Office Revenue by Genre](Dsc-Phase-2-project-2025/Images/img5.png)
+  ![Box Office Revenue by Genre](Images/img5.png)
    
 ## Conclusion
 
