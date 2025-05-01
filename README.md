@@ -2,58 +2,81 @@
 # Final Project: Movie Performance Analysis
 
 ## Overview
-This project investigates the relationships between movie reviews, box office performance, and studio output using datasets from Rotten Tomatoes, Box Office Mojo, and IMDb. The goal is to understand how critical and audience responses correlate with financial success and production trends.
+
+This repository contains the exploratory data analysis (EDA) project on the movie industry to generate actionable insights for a company launching a new movie studio. The goal is to uncover patterns and factors that contribute to box office success by examining various datasets related to film performance, including genres, budgets, runtimes, and release timing.
+
+---
 
 ## Business Understanding
-The key business goal is to guide studios and investors in making informed decisions regarding movie production and marketing by analyzing factors that contribute to box office success.
 
-### Stakeholders
-- Movie studios and production houses
-- Investors and financial analysts in the film industry
-- Marketing teams for film promotion
+The company plans to launch a new movie production studio but currently lacks experience in the film industry. To make data-driven decisions, leadership wants to understand:
 
-### Key Business Questions
-- Do highly rated movies on Rotten Tomatoes perform better at the box office?
-- Which studios produce the most commercially successful films?
-- What movie characteristics (e.g., genre, rating, critic score) correlate with financial performance?
+- Which genres are the most profitable?  
+- What months or seasons yield the best box office performance?
+- Do directors significantly influence success?
+- How does the production studio affect financial and critical outcomes?
+- What trends in audience preferences or industry performance should be considered?
+
+These insights will guide investment strategies and help ensure a profitable market entry.
+
 
 ## Data Understanding and Analysis
 
 ### Source of Data
-- **Rotten Tomatoes Dataset:** Contains movie reviews and critic ratings.
-- **Box Office Dataset:** Includes revenue data from movie releases.
-- **IMDb Dataset:** Provides metadata like genre, director, cast, etc.
+
+The project draws from multiple sources:
+- IMDb  
+- Box Office Mojo  
+- Rotten Tomatoes  
+- TheMovieDB  
+- The Numbers  
+
+The datasets include structured (CSV, TSV) and relational (SQLite) formats, covering movie details, reviews, box office performance, and studio data.
 
 ### Description of Data
-- **Rotten Tomatoes:** Titles, critic scores, audience scores, etc.
-- **Box Office:** Studio names, gross income (domestic/international), release dates.
-- **IMDb:** Movie metadata including runtime, genre, and release year.
 
-## Visualizations
+Key datasets:
+- Rotten Tomatoes: Movie ratings and reviews.
+- Box Office Mojo: Revenue and earnings.
+- TheMovieDB: Metadata such as cast, crew, and production details.
+- The Numbers: Financial performance, budgets, and profits.
 
-1. **Studios vs Box Office Performance**  
-   ![Studios vs Box Office](Images/img1.png)
+These datasets were cleaned, merged, and prepared for exploratory analysis.
 
-2. **Rotten Tomatoes Score vs Gross Revenue**  
-   ![RT Score vs Revenue](Images/img2.png)
+### Visualizations
 
-3. **Genre Distribution of Top-Grossing Films**  
-   ![Genre Distribution](Images/img3.png)
+Three visualizations presented in this project:
 
-4. **Top Directors by Average Movie Rating**
-   ![Top Directors by Average Movie Rating](Images/img4.png)
+1. **relationship between studios and Box Office performance**  
+   !['Top 10 Studios by Average Box Office Earnings'](Images/img1.png)
 
-5. **Box Office Revenue by Genre**
-  ![Box Office Revenue by Genre](Images/img5.png)
-   
+2. **Find top 5 studios by number of movies**  
+   !['Box Office Earnings by Top 5 Studios'](Images/img2.png)
+
+3. **Top Directors vs Box Office Performance**  
+   !['Box Office Revenue: Top Directors vs Others'](Images/img3.png)
+
+4. **Top Directors by Average Movie Rating**  
+   !['Top Directors by Average Movie Rating'](Images/img4.png)
+
+5. **Genre vs Box Office Performance**  
+   !['Box Office Revenue by Genre'](Images/img5.png)
+
+
+
 ## Conclusion
 
-### Summary of Findings
-- **Studio Performance:** Certain studios (e.g., Disney, Warner Bros.) consistently outperform others in box office revenue.
-- **Critical Acclaim and Revenue:** Higher Rotten Tomatoes critic scores generally correlate with higher box office performance.
-- **Genre Trends:** Action and adventure films dominate top-grossing lists, indicating audience preference and profitability.
+### Summary of Conclusions
 
-These insights help stakeholders in the film industry optimize their strategies for movie development, acquisition, and marketing.
+Based on the EDA, we identified three key findings:
 
----
-*This analysis was conducted using Python (pandas, matplotlib, seaborn) and is documented in the associated Jupyter notebook.*
+- **Director Impact (T-Test Results):**  
+  Statistical tests comparing films by top directors versus others showed a highly significant difference in average box office earnings (T-statistic ≈ 26.10, p-value ≈ 0.0000), indicating that well-known or acclaimed directors reliably boost audience draw and revenue.
+
+- **Studio-Level Revenue Analysis:**  
+  Among the top five studios, Universal Pictures and Sony Pictures consistently produced the highest-revenue films, outperforming competitors on average. This suggests that their production choices, marketing strategies, and resource allocations serve as strong models for success.
+
+- **Genre Profitability Patterns:**  
+  Median and upper-quartile box office earnings were highest in the Animation and Action/Adventure categories, with Animation films showing consistently strong returns and fewer underperformers. These genres demonstrate robust audience demand and profitability.
+
+These findings provide actionable recommendations for the company’s launch strategy: Invest in Top Directors to Boost Revenue Potential,  Model After High-Performing Studios and Prioritize   Animation and Action/Adventure Films 
